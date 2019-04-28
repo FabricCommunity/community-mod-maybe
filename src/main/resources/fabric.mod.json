@@ -23,7 +23,8 @@
     ]
   },
   "mixins": [
-    "communitymod.mixins.json"
+    "communitymod.mixins.json",
+    "communitymod.bonus.mixins.json"
   ],
 
   "requires": {

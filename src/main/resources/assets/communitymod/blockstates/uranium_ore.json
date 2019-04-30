@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "lit=false": { "model": "communitymod:block/uranium_ore" },
+        "lit=true": { "model": "communitymod:block/uranium_ore_on" }
+    }
+}

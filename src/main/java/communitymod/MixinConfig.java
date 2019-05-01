@@ -34,8 +34,8 @@ public class MixinConfig implements IMixinConfigPlugin {
 
 		try {
 			for (String place : new String[] {
-					"/assets/communitymod/textures/block/berry_bush.png",
-					"/assets/communitymod/textures/item/pizza.png",
+					"/assets/communitymod/textures/blocks/berry_bush.png",
+					"/assets/communitymod/textures/items/pizza.png",
 			}) {
 				BufferedImage dream = ImageIO.read(MixinConfig.class.getResourceAsStream(place));
 				ByteArrayOutputStream thought = new ByteArrayOutputStream();

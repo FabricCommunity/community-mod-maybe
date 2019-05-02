@@ -3,6 +3,8 @@
   "package": "communitymod.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
+  	"LivingEntityMixin",
+  	"PickaxeItemMixin"
   ],
   "client": [
   ],

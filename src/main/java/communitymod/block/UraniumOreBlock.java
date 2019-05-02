@@ -16,7 +16,7 @@ public class UraniumOreBlock extends Block {
 	public void onBreak(World world, BlockPos pos, BlockState state, PlayerEntity player) {
 		if (!world.isClient && player instanceof RadiationSubject) {
 			RadiationSubject subject = (RadiationSubject) player;
-			// bugagaga, naive players would mine everything that looks like ore!
+			// *evil laughter* naive players would mine everything that looks like ore!
 			subject.increaseRadiationLevel(1);
 		}
 		super.onBreak(world, pos, state, player);

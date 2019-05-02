@@ -51,7 +51,7 @@ public abstract class LivingEntityMixin extends Entity implements RadiationSubje
 			this.damage(CommunityMod.RADIATION_DAMAGE, 1);
 		}
 		if (radiation > 250 && !living.hasStatusEffect(StatusEffects.GLOWING)) {
-			// that could be a new achievement in mod ;3
+			// that could be achievement! *evil laughter*
 			living.addPotionEffect(new StatusEffectInstance(StatusEffects.GLOWING, 1000));
 		}
 	}

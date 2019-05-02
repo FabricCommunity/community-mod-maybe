@@ -35,7 +35,7 @@ public class CommunityMod implements ModInitializer {
 	public void onInitialize() {
 		Registry.register(Registry.BLOCK, new Identifier(MODID, "uranium_ore"), URANIUM_ORE);
 		Registry.register(Registry.ITEM, new Identifier(MODID, "uranium_ore"),
-				new BlockItem(URANIUM_ORE, new Item.Settings().itemGroup(ItemGroup.MATERIALS)));
+				new BlockItem(URANIUM_ORE, new Item.Settings().itemGroup(ItemGroup.BUILDING_BLOCKS)));
 
 		Registry.register(Registry.ITEM, new Identifier(MODID, "uranium_nugget"), URANIUM_NUGGET);
 		Registry.register(Registry.ITEM, new Identifier(MODID, "uranium_ingot"), URANIUM_INGOT);

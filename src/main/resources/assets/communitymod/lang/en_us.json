@@ -1,5 +1,6 @@
 {
 	"block.communitymod.uranium_ore": "Uranium Ore",
 	"item.communitymod.uranium_ingot": "Uranium Ingot",
-	"item.communitymod.uranium_nugget": "Uranium Nugget"
+	"item.communitymod.uranium_nugget": "Uranium Nugget",
+	"death.attack.radiation": "%1$s died from radiation poisoning."
 }

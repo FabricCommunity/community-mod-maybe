@@ -5,6 +5,7 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
+import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -22,6 +23,13 @@ public class CommunityMod implements ModInitializer {
 			new Item.Settings().itemGroup(ItemGroup.MATERIALS).rarity(Rarity.UNCOMMON));
 	public static final Item URANIUM_INGOT = new Item(
 			new Item.Settings().itemGroup(ItemGroup.MATERIALS).rarity(Rarity.UNCOMMON));
+
+	public static final DamageSource RADIATION_DAMAGE = new DamageSource("radiation") {
+		{
+			this.setBypassesArmor();
+			this.setScaledWithDifficulty();
+		}
+	};
 
 	@Override
 	public void onInitialize() {

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "communitymod:uranium_ore"
+  },
+  "result": "communitymod:uranium_ingot",
+  "experience": 3,
+  "cookingtime": 200
+}

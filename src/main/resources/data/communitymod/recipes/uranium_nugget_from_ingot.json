@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "communitymod:uranium_ingot"
+    }
+  ],
+  "result": {
+    "item": "communitymod:uranium_nugget",
+    "count": 9
+  }
+}

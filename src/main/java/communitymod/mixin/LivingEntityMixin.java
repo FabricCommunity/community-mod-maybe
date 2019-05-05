@@ -33,12 +33,12 @@ public abstract class LivingEntityMixin extends Entity implements RadiationSubje
 	}
 
 	@Inject(method = "initDataTracker", at = @At("HEAD"))
-	protected void initDataTracker(CallbackInfo ci) {
+	private void initDataTracker(CallbackInfo ci) {
 		this.dataTracker.startTracking(RadiationSubject.RADIATION_LEVEL, 0);
 	}
 
 	@Inject(method = "tick", at = @At("HEAD"))
-	protected void tick(CallbackInfo ci) {
+	private void tick(CallbackInfo ci) {
 		int radiation = getRadiationLevel();
 		if (radiation > 0 && this.age % 256 * 10 == 0) {
 			decreaseRadiationLevel(1);
@@ -57,12 +57,12 @@ public abstract class LivingEntityMixin extends Entity implements RadiationSubje
 	}
 
 	@Inject(method = "writeCustomDataToTag", at = @At("HEAD"))
-	public void writeCustomDataToTag(CompoundTag tag, CallbackInfo ci) {
+	private void writeCustomDataToTag(CompoundTag tag, CallbackInfo ci) {
 		tag.putInt("RadiationLevel", getRadiationLevel());
 	}
 
 	@Inject(method = "readCustomDataFromTag", at = @At("HEAD"))
-	public void readCustomDataFromTag(CompoundTag tag, CallbackInfo ci) {
+	private void readCustomDataFromTag(CompoundTag tag, CallbackInfo ci) {
 		setRadiationLevel(tag.getInt("RadiationLevel"));
 	}
 }

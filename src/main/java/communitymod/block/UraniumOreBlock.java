@@ -1,5 +1,6 @@
 package communitymod.block;
 
+import communitymod.api.CustomBlock;
 import communitymod.api.RadiationSubject;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -7,7 +8,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public class UraniumOreBlock extends Block {
+public class UraniumOreBlock extends Block implements CustomBlock {
 	public UraniumOreBlock(Block.Settings settings) {
 		super(settings);
 	}
@@ -22,4 +23,8 @@ public class UraniumOreBlock extends Block {
 		super.onBreak(world, pos, state, player);
 	}
 
+	@Override
+	public int getEffectivenessLevel() {
+		return 2;
+	}
 }
